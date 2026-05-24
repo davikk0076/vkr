@@ -1,0 +1,28 @@
+{
+  "name": "proga",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"node api.js\" \"cd web-app && npm start\"",
+    "api": "node api.js",
+    "web": "cd web-app && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.15.2",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "ffmpeg-static": "^5.3.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "form-data": "^4.0.5",
+    "json": "^11.0.0",
+    "multer": "^2.1.1",
+    "pg": "^8.20.0"
+  }
+}
